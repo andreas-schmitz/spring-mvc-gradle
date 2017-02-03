@@ -1,0 +1,20 @@
+apply plugin : 'war'
+apply plugin: 'application'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+compileJava.options.encoding = 'utf-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
+    providedCompile 'javax.servlet.jsp:jsp-api:2.1'
+    compile 'org.springframework:spring-core:3.2.0.RELEASE'
+    compile 'org.springframework:spring-web:3.2.0.RELEASE'
+    compile 'org.springframework:spring-webmvc:3.2.0.RELEASE'
+    testCompile 'org.springframework:spring-test:3.2.0.RELEASE'
+    testCompile 'junit:junit:4.8.2'
+}
