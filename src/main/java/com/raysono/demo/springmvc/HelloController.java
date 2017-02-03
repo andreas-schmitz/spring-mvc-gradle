@@ -20,7 +20,7 @@ public class HelloController {
 		//		cookie.setSecure(true);
 		cookie.setMaxAge(600);
 		response.addCookie(cookie);
-		model.addAttribute("message", "Dockertest V3");
+		model.addAttribute("message", "Azure test V3");
 		return "hello";
 	}
 
