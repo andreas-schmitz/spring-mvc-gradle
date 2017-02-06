@@ -20,7 +20,7 @@ public class HelloController {
 		//		cookie.setSecure(true);
 		cookie.setMaxAge(600);
 		response.addCookie(cookie);
-		model.addAttribute("message", "Azure test FTP deployment");
+		model.addAttribute("message", "Azure App Service FTP deployment");
 		return "hello";
 	}
 
